@@ -764,6 +764,11 @@ body{
                 }
             }
 
+            .btn:hover{
+              transition: .3s;
+              opacity: .8;
+            }
+
         }/*block*/
 
         .image_item{
@@ -1068,6 +1073,11 @@ body{
             }
         }
 
+        .btn:hover{
+          transition: .3s;
+          opacity: .8;
+        }
+
     }/*wrap*/
 }/*topic*/
 
@@ -1229,6 +1239,12 @@ body{
   
   
         }/*a*/  
+
+        a:hover{
+          transition: .8s;
+          opacity: 0.8;
+        }
+    
       }
   
       .right_button{
@@ -1262,6 +1278,12 @@ body{
         }
       
       }/*a*/
+
+      a:hover{
+        transition: .8s;
+        opacity: 0.8;
+      }
+  
   
       }
     }/*button_block*/
@@ -1342,6 +1364,12 @@ body{
               }
   
           }/*li*/
+
+          li:hover{
+            transition: .3s;
+            opacity: .8;
+          }
+
         
             li:last-child{
               border-right: none;
@@ -1407,6 +1435,12 @@ body{
     
               
           }/*li*/
+
+          li:hover{
+            transition: .3s;
+            opacity: .8;
+          }
+
         
             li:last-child{
               border-right: none;

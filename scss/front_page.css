@@ -1090,6 +1090,12 @@ html body .service_wrap .service_block .btn a {
   border-radius: 30px;
 }
 
+html body .service_wrap .service_block .btn:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: .8;
+}
+
 html body .service_wrap .image_item {
   width: 636px;
   /*ul*/
@@ -1456,6 +1462,12 @@ html body .topic_wrap .btn a {
   }
 }
 
+html body .topic_wrap .btn:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: .8;
+}
+
 html body .button-wrap {
   background-image: url(../img/common/contact_mainvisual.png);
   background-size: 100% 510px;
@@ -1625,6 +1637,12 @@ html body .button-wrap .block .button_block .left_button a .time {
   }
 }
 
+html body .button-wrap .block .button_block .left_button a:hover {
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0.8;
+}
+
 html body .button-wrap .block .button_block .right_button {
   width: 100%;
   /*a*/
@@ -1661,6 +1679,12 @@ html body .button-wrap .block .button_block .right_button a {
     padding: 24px 0px;
     height: 72px;
   }
+}
+
+html body .button-wrap .block .button_block .right_button a:hover {
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 0.8;
 }
 
 html body .button-wrap::before {
@@ -1761,6 +1785,12 @@ html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li a {
   padding-left: 25px;
 }
 
+html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: .8;
+}
+
 html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li:last-child {
   border-right: none;
 }
@@ -1824,6 +1854,12 @@ html body .footer .footer_inner .footer_nav .footer_nav_ul li a {
 
 html body .footer .footer_inner .footer_nav .footer_nav_ul li #first-nav {
   padding-left: 0px;
+}
+
+html body .footer .footer_inner .footer_nav .footer_nav_ul li:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: .8;
 }
 
 html body .footer .footer_inner .footer_nav .footer_nav_ul li:last-child {
