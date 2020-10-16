@@ -465,6 +465,8 @@ html body header #header-inner .header-nav {
     display: none;
     width: 100%;
     color: black;
+    height: 100vh;
+    background-color: #ffffff;
     text-align: center;
     position: fixed;
     top: 0;
@@ -491,6 +493,16 @@ html body header #header-inner .header-nav ul {
     display: inline-block;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+
+html body header #header-inner .header-nav ul #drawer-home {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html body header #header-inner .header-nav ul #drawer-home {
+    display: block;
   }
 }
 
@@ -618,6 +630,7 @@ html body header #header-inner .btn-gnavi {
 @media (max-width: 560px) {
   html body header #header-inner .btn-gnavi {
     top: 20px;
+    right: 7%;
   }
 }
 
@@ -697,6 +710,13 @@ html body header #header-inner .btn-gnavi.hb-open span:nth-of-type(1) {
   transition: 0.5s;
 }
 
+@media (max-width: 560px) {
+  html body header #header-inner .btn-gnavi.hb-open span:nth-of-type(1) {
+    -webkit-transform: translateY(5px) rotate(-45deg);
+    transform: translateY(5px) rotate(-45deg);
+  }
+}
+
 html body header #header-inner .btn-gnavi.hb-open span:nth-of-type(2) {
   opacity: 0;
 }
@@ -707,6 +727,14 @@ html body header #header-inner .btn-gnavi.hb-open span:nth-of-type(3) {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 40px;
+}
+
+@media (max-width: 560px) {
+  html body header #header-inner .btn-gnavi.hb-open span:nth-of-type(3) {
+    width: 17px;
+    -webkit-transform: translateY(-5px) rotate(230deg);
+    transform: translateY(-5px) rotate(45deg);
+  }
 }
 
 html body .mainvisual {
@@ -876,7 +904,7 @@ html body .contact .form .text-area {
 
 @media (max-width: 560px) {
   html body .contact .form .text-area {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 }
 
@@ -950,12 +978,6 @@ html body .contact .form .text-area .text-content {
   }
 }
 
-@media (max-width: 425px) {
-  html body .contact .form .text-area .text-content {
-    height: 150px;
-  }
-}
-
 html body .contact .form #last-text-area {
   margin-bottom: 0px;
 }
@@ -985,6 +1007,9 @@ html body .contact .form .btn_area input {
   letter-spacing: 0.9px;
   font-size: 18px;
   padding: 17px 0px;
+  letter-spacing: 1em;
+  text-align: center;
+  text-indent: 1em;
 }
 
 @media (max-width: 560px) {
@@ -1045,6 +1070,7 @@ html body .button-wrap .block .letter-block {
 
 html body .button-wrap .block .letter-block .sub-letter {
   font-size: 16px;
+  font-weight: bold;
 }
 
 @media (max-width: 560px) {
@@ -1126,7 +1152,7 @@ html body .button-wrap .block .button_block .left_button a {
   background-color: white;
   text-align: center;
   height: 133px;
-  padding-top: 40px;
+  padding-top: 30px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   /*img*/
@@ -1154,6 +1180,23 @@ html body .button-wrap .block .button_block .left_button a {
     font-size: 25px;
     padding: 10px 0px 14px 0px;
     height: 80px;
+  }
+}
+
+html body .button-wrap .block .button_block .left_button a img {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  html body .button-wrap .block .button_block .left_button a img {
+    margin-right: 7px;
+    width: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block .left_button a img {
+    width: 16px;
   }
 }
 
@@ -1314,6 +1357,8 @@ html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li a {
   color: white;
   padding-right: 25px;
   padding-left: 25px;
+  font-size: 14px;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li:hover {
@@ -1381,6 +1426,7 @@ html body .footer .footer_inner .footer_nav .footer_nav_ul li a {
   color: white;
   padding-right: 15px;
   padding-left: 15px;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 html body .footer .footer_inner .footer_nav .footer_nav_ul li #first-nav {
