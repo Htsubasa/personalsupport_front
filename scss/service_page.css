@@ -826,6 +826,18 @@ html body .line-up-wrap {
   /*h3*/
 }
 
+@media (max-width: 560px) {
+  html body .line-up-wrap {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 425px) {
+  html body .line-up-wrap {
+    padding-top: 190px;
+  }
+}
+
 html body .line-up-wrap h4 {
   font-size: 16px;
   text-align: center;
@@ -903,6 +915,12 @@ html body .line-up-wrap .image_item_sp ul li img {
 html body .line-up-wrap .image_item_sp ul li .item_text {
   font-size: 12px;
   color: #2C75FF;
+}
+
+@media (max-width: 560px) {
+  html body .line-up-wrap .image_item_sp ul li .item_text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {

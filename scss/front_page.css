@@ -952,6 +952,18 @@ html body .middle_card .card_block {
   }
 }
 
+@media (max-width: 560px) {
+  html body .middle_card .card_block {
+    height: 450px;
+  }
+}
+
+@media (max-width: 425px) {
+  html body .middle_card .card_block {
+    height: 500px;
+  }
+}
+
 html body .middle_card .card_block .middle_card_title {
   color: #364E60;
   font-size: 40px;

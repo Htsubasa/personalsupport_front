@@ -645,7 +645,14 @@ body{
         }
 
         @include sp{
+          height: 450px;
         }
+
+
+        @include sp-second(){
+          height: 500px;
+        }
+    
     
         .middle_card_title{
             color: #364E60;
