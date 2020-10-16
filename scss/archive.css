@@ -1091,11 +1091,27 @@ html body .button-wrap {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+@media (max-width: 560px) {
+  html body .button-wrap {
+    background-image: url(../img/common/contact_sp.png);
+    height: 433px;
+  }
+}
+
+html body .button-wrap .block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
   /*letter-block*/
   /*button_block*/
 }
 
-html body .button-wrap .letter-block {
+html body .button-wrap .block .letter-block {
   color: white;
   text-align: center;
   padding-top: 102px;
@@ -1105,22 +1121,48 @@ html body .button-wrap .letter-block {
   /*sub-sentence*/
 }
 
-html body .button-wrap .letter-block .sub-letter {
+@media (max-width: 560px) {
+  html body .button-wrap .block .letter-block {
+    padding-top: 62px;
+    margin-bottom: 30px;
+  }
+}
+
+html body .button-wrap .block .letter-block .sub-letter {
   font-size: 16px;
 }
 
-html body .button-wrap .letter-block .contact-letter {
+@media (max-width: 560px) {
+  html body .button-wrap .block .letter-block .sub-letter {
+    font-size: 13px;
+  }
+}
+
+html body .button-wrap .block .letter-block .contact-letter {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 52px;
   font-weight: bold;
   margin-bottom: 25px;
 }
 
-html body .button-wrap .letter-block .sub-sentence {
+@media (max-width: 560px) {
+  html body .button-wrap .block .letter-block .contact-letter {
+    font-size: 33px;
+    margin-bottom: 22px;
+  }
+}
+
+html body .button-wrap .block .letter-block .sub-sentence {
   font-size: 18px;
 }
 
-html body .button-wrap .button_block {
+@media (max-width: 560px) {
+  html body .button-wrap .block .letter-block .sub-sentence {
+    font-size: 15px;
+  }
+}
+
+html body .button-wrap .block .button_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1130,12 +1172,39 @@ html body .button-wrap .button_block {
   margin-top: 42px;
 }
 
-html body .button-wrap .button_block .left_button {
+@media (max-width: 1100px) {
+  html body .button-wrap .block .button_block {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body .button-wrap .block .button_block {
+    width: 94%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block {
+    display: block;
+  }
+}
+
+html body .button-wrap .block .button_block .left_button {
   width: 100%;
   /*a*/
 }
 
-html body .button-wrap .button_block .left_button a {
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block .left_button {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+}
+
+html body .button-wrap .block .button_block .left_button a {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 37px;
   display: block;
@@ -1149,17 +1218,47 @@ html body .button-wrap .button_block .left_button a {
   /*span*/
 }
 
-html body .button-wrap .button_block .left_button a .time {
+@media (max-width: 1100px) {
+  html body .button-wrap .block .button_block .left_button a {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body .button-wrap .block .button_block .left_button a {
+    height: 100px;
+    padding-top: 20px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block .left_button a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    padding: 10px 0px 14px 0px;
+    height: 80px;
+  }
+}
+
+html body .button-wrap .block .button_block .left_button a .time {
   display: block;
   font-size: 15px;
 }
 
-html body .button-wrap .button_block .right_button {
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block .left_button a .time {
+    font-size: 14px;
+  }
+}
+
+html body .button-wrap .block .button_block .right_button {
   width: 100%;
   /*a*/
 }
 
-html body .button-wrap .button_block .right_button a {
+html body .button-wrap .block .button_block .right_button a {
   display: block;
   text-align: center;
   font-size: 22px;
@@ -1170,6 +1269,38 @@ html body .button-wrap .button_block .right_button a {
   background: linear-gradient(to right, #FF2E47, #FFAD88);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  html body .button-wrap .block .button_block .right_button a {
+    height: 100px;
+    padding: 35px 0px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block .right_button a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 24px 0px;
+    height: 72px;
+  }
+}
+
+html body .button-wrap::before {
+  height: 510px;
+  width: 100%;
+  z-index: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(54, 78, 96, 0.45);
 }
 
 html body .footer {
