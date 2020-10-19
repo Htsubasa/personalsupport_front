@@ -850,9 +850,10 @@ html body .mainvisual .mainvisual_wrap_sp .mainvisual_text .btn a:hover {
 }
 
 html body .mainvisual-wrap {
+  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -moz-flex;
   /*text*/
   /*img*/
 }
